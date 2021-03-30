@@ -1,16 +1,50 @@
-import React from "react";
-import axios from "axios";
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import "./Weather.css";
 
-export default function Weather(props) {
-  function handleResponse(response) {
-    alert(
-      `The weather in ${response.data.name} is ${response.data.main.temp}C`
-    );
-  }
-
-  let apiKey = "15351fed24e9858d556a9255a2af3e61";
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(url).then(handleResponse);
-  return <h2>Hello from Weather</h2>;
+export default function Weather() {
+  return (
+    <div className="weather">
+      <h1>
+        <span id="temperature"> 8 </span>
+        <p class="units">
+          <a href="#" id="celsius" class="active">
+            °C
+            <br />
+          </a>
+          <a href="#" id="fahrenheit">
+            °F
+          </a>
+        </p>
+      </h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card icon">
+            <div class="card-body">
+              <p class="card-text emoji">
+                <img src="" alt="Current Weather Icon" id="icon" />
+              </p>
+              <p id="description">Cloudy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card weatherdetails">
+            <div class="card-body">
+              <p class="card-text">
+                <ul>
+                  <li>
+                    Humidity: <span id="humidity"></span>%
+                  </li>
+                  <li>
+                    Wind: <span id="windspeed"></span>
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

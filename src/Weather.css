@@ -1,0 +1,83 @@
+body {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  line-height: 12px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+a#celsius,
+a#fahrenheit {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+a#celsius:hover,
+a#fahrenheit:hover {
+  text-decoration: none;
+}
+
+#fahrenheit {
+  position: relative;
+  top: -40px;
+  left: 45px;
+}
+
+#celsius {
+  position: relative;
+  top: -38px;
+  left: 45px;
+}
+
+.active {
+  cursor: default;
+  font-size: 23px !important;
+  text-decoration: none !important;
+  position: relative;
+}
+
+.card-text.emoji {
+  margin-bottom: 0px;
+}
+
+.card.weatherdetails {
+  background-color: rgba(250, 250, 250, 0);
+  border: none;
+  font-size: 15px;
+  top: -20px;
+}
+
+.card.icon {
+  background-color: rgba(250, 250, 250, 0);
+  border: none;
+  font-size: 15px;
+  top: -40px;
+}
+
+p.units {
+  margin-bottom: 0px;
+}
+
+.col-sm-6 {
+  text-align: center;
+  height: 120px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+p#description {
+  font-style: italic;
+  line-height: 0px;
+}

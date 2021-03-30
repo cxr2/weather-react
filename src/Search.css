@@ -1,0 +1,27 @@
+.form-control {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.form-control {
+  max-width: 200px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
