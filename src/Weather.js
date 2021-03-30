@@ -1,5 +1,3 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
 import "./Weather.css";
 
 export default function Weather() {
@@ -8,13 +6,11 @@ export default function Weather() {
       <h1>
         <span id="temperature"> 8 </span>
         <p class="units">
-          <a href="#" id="celsius" class="active">
+          <span id="celsius" class="active">
             °C
             <br />
-          </a>
-          <a href="#" id="fahrenheit">
-            °F
-          </a>
+          </span>
+          <span id="fahrenheit">°F</span>
         </p>
       </h1>
       <div class="row">

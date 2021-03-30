@@ -10,16 +10,16 @@ h1 {
   margin-bottom: 0px;
 }
 
-a#celsius,
-a#fahrenheit {
+span#celsius,
+span#fahrenheit {
   font-size: 16px;
   font-weight: 600;
   color: white;
   text-decoration: underline;
 }
 
-a#celsius:hover,
-a#fahrenheit:hover {
+span#celsius:hover,
+span#fahrenheit:hover {
   text-decoration: none;
 }
 
