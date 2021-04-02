@@ -13,7 +13,7 @@ export default function App() {
         </div>
       </div>
       <div className="footer">
-        <a href="https://github.com/cxr2/WeatherProject" rel="noreferrer">
+        <a href="https://github.com/cxr2/weather-react" rel="noreferrer">
           Open-source code
         </a>{" "}
         by{" "}
