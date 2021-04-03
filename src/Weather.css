@@ -1,8 +1,33 @@
-body {
+.Weather {
   color: white;
 }
+.Weather .form-control {
+  margin-top: 40px;
+  display: inline-block;
+  max-width: 200px;
+}
 
-h1 {
+.Weather .btn-outline-secondary {
+  color: white;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 5px;
+}
+
+.Weather h2 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Weather h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.Weather h1 {
   text-align: center;
   font-size: 60px;
   line-height: 12px;
@@ -10,66 +35,66 @@ h1 {
   margin-bottom: 0px;
 }
 
-span#celsius,
-span#fahrenheit {
+.Weather span#celsius,
+.Weather span#fahrenheit {
   font-size: 16px;
   font-weight: 600;
   color: white;
   text-decoration: underline;
 }
 
-span#celsius:hover,
-span#fahrenheit:hover {
+.Weather span#celsius:hover,
+.Weather span#fahrenheit:hover {
   text-decoration: none;
 }
 
-#fahrenheit {
+.Weather #fahrenheit {
   position: relative;
   top: -40px;
   left: 45px;
 }
 
-#celsius {
+.Weather #celsius {
   position: relative;
   top: -38px;
   left: 45px;
 }
 
-.active {
+.Weather .active {
   cursor: default;
   font-size: 23px !important;
   text-decoration: none !important;
   position: relative;
 }
 
-.card-text.emoji {
+.Weather .card-text.emoji {
   margin-bottom: 0px;
 }
 
-.card.weatherdetails {
+.Weather .card.weatherdetails {
   background-color: rgba(250, 250, 250, 0);
   border: none;
   font-size: 15px;
   top: -20px;
 }
 
-.card.icon {
+.Weather .card.icon {
   background-color: rgba(250, 250, 250, 0);
   border: none;
   font-size: 15px;
   top: -40px;
 }
 
-p.units {
+.Weather p.units {
   margin-bottom: 0px;
 }
 
-.col-sm-6 {
+.Weather .col-sm-6 {
   text-align: center;
   height: 120px;
 }
 
-ul {
+.Weather ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
@@ -77,7 +102,14 @@ ul {
   margin-top: 10px;
 }
 
-p#description {
+.Weather p#description {
   font-style: italic;
   line-height: 0px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }

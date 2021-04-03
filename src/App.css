@@ -1,12 +1,16 @@
-.container-fluid {
+.App {
+  font-family: "Roboto", sans-serif;
+}
+
+.App .container-fluid {
   background-image: linear-gradient(to top, #f0d8aa 0%, #66c1dd 60%);
-  max-width: 450px;
+  max-width: 400px;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.02);
 }
 
-.footer {
+.App .footer {
   font-size: 13px;
   text-align: center;
   color: black;
