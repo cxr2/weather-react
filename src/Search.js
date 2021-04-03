@@ -12,6 +12,7 @@ export default function Search() {
             class="form-control"
             id="cityInput"
             placeholder="Enter a town or city"
+            autoFocus="on"
           ></input>
           <button
             className="btn btn-outline-secondary"
