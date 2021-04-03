@@ -1,13 +1,13 @@
 .form-control {
   margin-top: 40px;
-  display: inline-block;
+  display: inline-block !important;
 }
 
-.btn {
-  display: inline-block;
-  color: white;
-  border: solid 1px white;
-  background-color: rgba(255, 255, 255, 0.2);
+.btn-outline-secondary {
+  color: white !important;
+  border: solid 1px white !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  margin-bottom: 5px !important;
 }
 .form-control {
   max-width: 200px;
@@ -24,4 +24,11 @@ h3 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 0px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }

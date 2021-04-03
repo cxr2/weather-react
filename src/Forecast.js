@@ -4,7 +4,7 @@ import "./Forecast.css";
 export default function Forecast() {
   return (
     <div className="forecast">
-      <div class="container">
+      <div className="container">
         <div
           class="row row-cols-auto justify-content-center"
           id="forecast"
