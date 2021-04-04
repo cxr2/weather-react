@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
         <FormattedDate date={props.data.date} />
       </h3>
       <h2>
-        <span id="city">{props.data.city}</span>, <span id="country">UK</span>
+        {props.data.city}, {props.data.country}
       </h2>
       <WeatherTemperature celsius={props.data.temperature} />
       <div class="row">
