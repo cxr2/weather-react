@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container-fluid" id="background">
         <div className="input-group justify-content-center">
-          <Weather />
+          <Weather defaultCity="London" />
         </div>
       </div>
       <div className="footer">

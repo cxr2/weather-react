@@ -92,6 +92,7 @@
 .Weather .col-sm-6 {
   text-align: center;
   height: 120px;
+  width: 170px;
 }
 
 .Weather ul {
@@ -104,7 +105,7 @@
 
 .Weather p#description {
   font-style: italic;
-  line-height: 0px;
+  line-height: 10px;
 }
 
 input[type="search"]::-webkit-search-decoration,
