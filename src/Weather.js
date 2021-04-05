@@ -10,6 +10,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
@@ -39,8 +40,8 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <div class="input-group justify-content-center">
-          <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
+          <div class="input-group mb-3 justify-content-center">
             <input
               type="search"
               class="form-control"
@@ -50,23 +51,17 @@ export default function Weather(props) {
               onChange={handleCityChange}
             ></input>
             <button
-              className="btn btn-outline-secondary"
-              id="search"
+              class="btn btn-outline-secondary"
               type="submit"
+              id="button-addon2"
             >
               <i class="fas fa-search"></i>
             </button>
-            <button
-              className="btn btn-outline-secondary"
-              id="currentlocation"
-              type="button"
-            >
-              <i class="fas fa-map-marker"></i>
-            </button>
-          </form>
-          <WeatherInfo data={weatherData} />
-          <WeatherForecast />
-        </div>
+          </div>
+        </form>
+
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
