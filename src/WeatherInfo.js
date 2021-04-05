@@ -18,7 +18,7 @@ export default function WeatherInfo(props) {
           <div class="card icon">
             <div class="card-body">
               <p class="card-text emoji">
-                <WeatherIcon code={props.data.icon} />
+                <WeatherIcon code={props.data.icon} size={60} />
               </p>
               <p className="text-capitalize" id="description">
                 {props.data.description}
