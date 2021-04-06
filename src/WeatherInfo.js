@@ -13,11 +13,11 @@ export default function WeatherInfo(props) {
         {props.data.city}, {props.data.country}
       </h2>
       <WeatherTemperature celsius={props.data.temperature} />
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card icon">
-            <div class="card-body">
-              <p class="card-text emoji">
+      <div className="row">
+        <div className="col-sm-6">
+          <div className="card icon">
+            <div className="card-body">
+              <p className="card-text emoji">
                 <WeatherIcon code={props.data.icon} size={60} />
               </p>
               <p className="text-capitalize" id="description">
@@ -26,15 +26,13 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card weatherdetails">
-            <div class="card-body">
-              <p class="card-text">
-                <ul>
-                  <li>Humidity: {props.data.humidity}%</li>
-                  <li>Wind: {Math.round(props.data.wind)} km/h</li>
-                </ul>
-              </p>
+        <div className="col-sm-6">
+          <div className="card weatherdetails">
+            <div className="card-body">
+              <ul className="card-text">
+                <li>Humidity: {props.data.humidity}%</li>
+                <li>Wind: {Math.round(props.data.wind)} km/h</li>
+              </ul>
             </div>
           </div>
         </div>

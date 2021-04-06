@@ -6,7 +6,7 @@ export default function Forecast() {
     <div className="Forecast">
       <div className="container">
         <div
-          class="row row-cols-auto justify-content-center"
+          className="row row-cols-auto justify-content-center"
           id="forecast"
         ></div>
       </div>

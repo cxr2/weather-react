@@ -41,21 +41,21 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
-          <div class="input-group mb-3 justify-content-center">
+          <div className="input-group mb-3 justify-content-center">
             <input
               type="search"
-              class="form-control"
+              className="form-control"
               id="cityInput"
               placeholder="Enter a town or city"
               autoFocus="on"
               onChange={handleCityChange}
             ></input>
             <button
-              class="btn btn-outline-secondary"
+              className="btn btn-outline-secondary"
               type="submit"
               id="button-addon2"
             >
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
             </button>
           </div>
         </form>
