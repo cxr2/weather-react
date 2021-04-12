@@ -65,6 +65,7 @@
 
 .Weather .card-text.emoji {
   margin-bottom: 0px;
+  padding-top: 30px;
 }
 
 .Weather .card.weatherdetails {
@@ -87,8 +88,7 @@
 
 .Weather .col-sm-6 {
   text-align: center;
-  height: 120px;
-  width: 170px;
+  height: 170px;
 }
 
 .Weather ul {
@@ -97,6 +97,7 @@
   display: inline-block;
   text-align: left;
   margin-top: 10px;
+  padding-top: 20px;
 }
 
 .Weather p#description {
@@ -109,4 +110,23 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+}
+
+.morning {
+  background: url("/src/images/ambackground.jpg");
+}
+
+.afternoon {
+  background: url("/src/images/afternoonbackground.jpg");
+}
+
+.evening {
+  background: url("/src/images/nightbackground.jpg");
+}
+
+.background {
+  background-repeat: no-repeat;
+  max-width: 450px;
+  height: 600px;
+  border-radius: 10px;
 }
