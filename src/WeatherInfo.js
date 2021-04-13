@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
         {props.data.city}, {props.data.country}
       </h2>
       <WeatherTemperature celsius={props.data.temperature} />
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         <div className="col-sm-6">
           <div className="card icon">
             <div className="card-body">

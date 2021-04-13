@@ -135,5 +135,10 @@ input[type="search"]::-webkit-search-results-decoration {
   .Weather .col-sm-6 {
     text-align: center;
     height: 100px;
+    width: 200px;
+  }
+
+  .Weather .row {
+    padding-bottom: 90px;
   }
 }
